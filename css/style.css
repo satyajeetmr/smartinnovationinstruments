@@ -1263,9 +1263,10 @@ a.scrollup{
     position:fixed;
     bottom:30px;
     right:40px;	
-    opacity:0,5;
+    opacity: 0.5;
     border-radius:50%;
     z-index:999;
+    background: #0045ac;
 }
 a.scrollup:hover{
     opacity:1;
