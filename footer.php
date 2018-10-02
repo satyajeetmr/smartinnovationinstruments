@@ -15,7 +15,7 @@
     <div class="footer">
         <div class="container">
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-md-3">
                     <div class="social-icon">
                         <ul class="social-network">
                             <li><a href="#" class="fb tool-tip" title="Facebook"><i class="fa fa-facebook"></i></a></li>
@@ -24,7 +24,7 @@
                         </ul>	
                     </div>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-9">
                     <div class="copyright text-right">
                         &copy; June  2018 by <a href="www.smartinnovationinstruments.com" target="_blank">smartinnovationinstruments.com</a>. All Rights Reserved.
                     </div>                

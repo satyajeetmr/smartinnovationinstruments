@@ -181,10 +181,10 @@ header .navbar {
 }
 .navbar-brand { 
     height: auto;
-    padding: 10px 15px;
+    padding: 10px 0px;
 }
 .navbar-brand img {
-    max-width: 200px;
+    width: 200px;
 }
 .menu {
     margin-top: 22px;
@@ -211,25 +211,22 @@ header .navbar {
     color:#444444;
     padding: 10px;
     margin: 0;
+    transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
 }
 
-.nav-tabs > li > a:hover {	
+.nav-tabs > li > a:hover, .nav-tabs > li > a:focus {	
     color: #0045ac;
     border-color: #fff #fff #fff;
     border-radius:0;
     background-color:#fff; 
-    transition: all 0.3s ease-in-out;
-    -moz-transition: all 0.3s ease-in-out;
-    -webkit-transition: all 0.3s ease-in-out;
-    -o-transition: all 0.3s ease-in-out;
 }
-.nav-tabs > li > a.active {
+.nav-tabs > li.current-menu-item > a {
     color: #0045ac;
     border-radius:0;
-    transition: all 0.3s ease-in-out;
-    -moz-transition: all 0.3s ease-in-out;
-    -webkit-transition: all 0.3s ease-in-out;
-    -o-transition: all 0.3s ease-in-out;
+
 }
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 { margin-top: 0; font-weight: 600; color: #0045ac; }
 .h1, h1 { margin-bottom: 20px; font-size: 50px; line-height: 58px; }
@@ -368,7 +365,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 { margin-top: 0; font-weigh
 }
 
 .feature {
-    padding:50px;
+    padding:50px 0;
 }
 .feature h5 {
     height: 52px;
@@ -430,7 +427,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 { margin-top: 0; font-weigh
 #partner {
     color: #fff;
     text-align: center;
-    padding:100px;
+    padding:100px 0;
 }
 
 #partner h2 {
@@ -580,7 +577,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 { margin-top: 0; font-weigh
 
 .about {
     background:#eee;
-    padding:50px;
+    padding:50px 0;
 }
 
 .about img {
@@ -1393,4 +1390,22 @@ html.mm-right.mm-opening .mm-slideout { -webkit-transform: translate(-300px, 0);
 .single-post .content img {
     max-width: 100%;
     height: auto;
+}
+
+@media (max-width: 991px) {
+    header .navigation .navbar-header {
+        max-width: 160px;
+    }
+    header .nav-tabs > li { 
+        margin-right: 10px;
+    }
+    .menu {
+        margin-top: 15px;
+    }
+    .page-wrapper {
+        padding-top: 73px;
+    }
+    
+
+
 }
