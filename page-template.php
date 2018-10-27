@@ -22,7 +22,7 @@ if (!is_front_page()) {
                     // loop through the rows of data
                     while (have_rows('home_slider')) : the_row();
                         ?>
-                        <div class="item <?php if ($i == 1): { ?> active <?php } endif; ?>" style="background-image: url('<?php echo the_sub_field('slide_img'); ?>')"></div><!--/.item-->     
+                <div class="item <?php if ($i == 1): { ?> active <?php } endif; ?>" style="background-image: url('<?php echo the_sub_field('slide_img'); ?>')"><img src="<?php echo the_sub_field('slide_img'); ?>" alt="" /></div><!--/.item-->     
                         <?php
                         $i++;
                     endwhile;

@@ -317,6 +317,10 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 { margin-top: 0; font-weigh
     background-size: cover;
     height: 450px;
 }
+#main-slider .carousel .item img {
+    opacity: 0;
+    max-height: 450px;
+}
 #main-slider .carousel-indicators li {
     border-color: #337ab7;
     background: #337ab7;
@@ -1261,12 +1265,15 @@ a.scrollup{
     text-align:center;
     text-decoration:none;
     position:fixed;
-    bottom:30px;
-    right:40px;	
-    opacity: 0.5;
+    bottom: 30px;
+    right: 30px;	
+    opacity: 0.9;
     border-radius:50%;
     z-index:999;
     background: #0045ac;
+    box-shadow: 0px 0px 7px 1px rgba(0, 0, 0, 0.4);
+    -webkit-box-shadow: 0px 0px 7px 1px rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: 0px 0px 7px 1px rgba(0, 0, 0, 0.4);
 }
 a.scrollup:hover{
     opacity:1;
