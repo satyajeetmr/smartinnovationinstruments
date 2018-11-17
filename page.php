@@ -46,11 +46,11 @@ if($pagetitle_bg){
             // Include the page content template.
             get_template_part('template-parts/content', 'page');
             wp_link_pages(array(
-                'before' => '<div class="page-links"><span class="page-links-title">' . __('Pages:', 'smartinnovation') . '</span>',
+                'before' => '<div class="page-links"><span class="page-links-title">' . __('Pages:', 'lendhome') . '</span>',
                 'after' => '</div>',
                 'link_before' => '<span>',
                 'link_after' => '</span>',
-                'pagelink' => '<span class="screen-reader-text">' . __('Page', 'smartinnovation') . ' </span>%',
+                'pagelink' => '<span class="screen-reader-text">' . __('Page', 'lendhome') . ' </span>%',
                 'separator' => '<span class="screen-reader-text">, </span>',
             ));
             if (comments_open() || get_comments_number()) {

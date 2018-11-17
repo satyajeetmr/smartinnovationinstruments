@@ -29,8 +29,16 @@ if ($pagetitle_bg) {
             <?php
             $category = get_the_category();
             $firstCategory = $category[0]->cat_name;
+//                if ($category->name == "Popular") {
+//                    // Popular
+//                } else {
+//                    
             ?> 
             <h2 class="entry-title"> <?php echo $firstCategory; ?> </h2>
+            <?php
+//                }
+//            }
+            ?>
         </div>
     </div><!-- page title -->
 
