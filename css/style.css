@@ -687,6 +687,7 @@ ul.social-network li a {
     display: block;
     padding-left: 70px;
     padding-top: 10px;
+    word-break: break-all;
 }
 .copyright a {
     color:#fff;
@@ -1500,6 +1501,15 @@ html.mm-right.mm-opening .mm-slideout { -webkit-transform: translate(-300px, 0);
 .cat-list .col-md-9 ul li .col-md-4:nth-child(3n+1) {
     clear: both;
 }
+.error-404 {
+    padding: 40px 0;
+    font-size: 34px;
+    line-height: 40px;
+    text-align: center;
+}
+.error-404 a {
+    font-size: 20px;
+}
 
 
 
@@ -1629,6 +1639,42 @@ html.mm-right.mm-opening .mm-slideout { -webkit-transform: translate(-300px, 0);
     .aboutus img {
         width: 280px;
     }
+    .cleint-list .col-3 {
+        margin-left: 20px;
+        -ms-flex: 0 0 50%;
+        flex: 0 0 50%;
+        max-width: calc(50% - 10px);
+    }
+    .cleint-list .col-3:nth-child(3n+1) {
+        margin-left: 20px;
+    }
+    .cleint-list .col-3:nth-child(2n+1) {
+        margin-left: 0px;
+    }
+    .contactInfo {
+        margin-bottom: 50px;
+    }
+    .contactInfo.flex-cls {
+        display: block;
+        -ms-flex-wrap: initial;
+        flex-wrap: initial;
+    }
+    .contactInfo .col-6 {
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .contactInfo .col-left .addressDiv {
+        word-break: break-all;
+        margin-bottom: 40px;
+        float: none;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        background: #106ffb;
+    }
+    .contactInfo:before {
+        display: none;
+    }
 
 }
 
@@ -1660,6 +1706,7 @@ html.mm-right.mm-opening .mm-slideout { -webkit-transform: translate(-300px, 0);
     }
 
 
+
 }
 
 @media (max-width: 500px) {
@@ -1673,6 +1720,21 @@ html.mm-right.mm-opening .mm-slideout { -webkit-transform: translate(-300px, 0);
     .cat-list .catBox h6 {
         min-height: 1px;
     }
-    
+    .cleint-list .col-3 {
+        padding: 20px;
+        margin-left: 0px;
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .cleint-list .col-3:nth-child(3n+1) {
+        margin-left: 0px;
+    }
+    .cleint-list .col-3:last-child {
+        margin-bottom: 0px;
+    }
+    .map iframe {
+        height: 300px; 
+    }
 
 }

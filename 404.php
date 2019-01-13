@@ -6,29 +6,45 @@
  * @subpackage Twenty_Sixteen
  * @since Twenty Sixteen 1.0
  */
+get_header();
 
-get_header(); ?>
+global $post;
 
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
+$class = '';
+if (!is_front_page()) {
+    $class = '404-page';
+}
+if (get_field('page_title_background_image')) {
+    $pagetitle_bg = get_field('page_title_background_image');
+} else if (get_field('page_title_background_image', 'option')) {
+    $pagetitle_bg = get_field('page_title_background_image', 'option');
+}
 
-			<section class="error-404 not-found">
-				<header class="page-header">
-					<h1 class="page-title"><?php _e( 'Oops! That page can&rsquo;t be found.', 'twentysixteen' ); ?></h1>
-				</header><!-- .page-header -->
+if ($pagetitle_bg) {
+    ?>
+    <style>
+        .page-title {
+            background-image: url(<?php echo $pagetitle_bg; ?>);
+        }
+    </style>
+    <?php
+}
+?>
+<main class="main-page <?php echo $class; ?>" role="main">
 
-				<div class="page-content">
-					<p><?php _e( 'It looks like nothing was found at this location. Maybe try a search?', 'twentysixteen' ); ?></p>
+    <div class="page-title">
+        <div class="container">
+            <h1 class="entry-title">404 pages not found</h1>
+        </div>
+    </div><!-- page title -->
 
-					<?php get_search_form(); ?>
-				</div><!-- .page-content -->
-			</section><!-- .error-404 -->
-
-		</main><!-- .site-main -->
-
-		<?php get_sidebar( 'content-bottom' ); ?>
-
-	</div><!-- .content-area -->
-
-<?php get_sidebar(); ?>
+    <section id="contact-page">
+        <div class="container wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">
+            <div class="error-404 clearfix">
+                Oops! That page can't be found.<br /><br />
+                <a href="<?php echo site_url(); ?>">Go To Home Page</a>
+            </div>
+        </div>
+    </section>
+</main>
 <?php get_footer(); ?>
